@@ -4,11 +4,9 @@
 N = gets.to_i
 S = gets.chomp
 
-if S[0] == 'A'
+if S[0] == 'A' && S[-1] == 'B'
   puts 'No'
-elsif S[-1] == 'B'
-  puts 'No'
-elsif N == 2
+elsif S == 'BA'
   puts 'No'
 else
   puts 'Yes'
