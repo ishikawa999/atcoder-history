@@ -3,9 +3,9 @@
 ## accとojを使ったコンテスト参加時用のコマンド
 
 ```sh
-cd atcoder
-acc new abc303 -c all
-cd abc303/c
+cd atcoder-history
+acc new abc000 -c all
+cd abc000/c
 touch main.rb
 # コードを書く
 ruby main.rb
