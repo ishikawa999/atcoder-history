@@ -1,11 +1,12 @@
 N = gets.to_i
 
-['(', ')'].repeated_permutation(N).each do |pattern|
+['(', ')'].repeated_permutation(N).each do |array|
   count = 0
-  pattern.each do |p|
-    count += 1 if p == '('
-    count -= 1 if p == ')'
-    break if count < 0
+  array.each do |bracket|
+    count += 1 if bracket == '('
+    count -= 1 if bracket == ')'
+    break if count < 0 # countがマイナスだったら
   end
-  puts pattern.join if count == 0
+  puts array.join if count == 0
 end
+
