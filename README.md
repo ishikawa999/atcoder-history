@@ -5,6 +5,7 @@
 ```sh
 cd atcoder-history
 acc new abc000 -c all
+for d in */ ; do touch "${d%/}/main.rb"; done
 cd abc000/c
 touch main.rb
 # コードを書く
